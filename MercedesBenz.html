@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/019/original/kisspng-mercedes-benz-sprinter-car-mercedes-benz-s-class-m-mercedes-logo-5a6b1571a578e4.0144230715169672816778.jpg?1673805886"
+    />
+    <title>Mercedes-Benz</title>
+    <style>
+      :root {
+        background-color: black;
+      }
+      div {
+        color: aliceblue;
+        font-family: cursive;
+        text-align: center;
+        padding: 30px;
+        max-width: 50%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 20px;
+        background: linear-gradient(
+          0deg,
+          rgba(1, 4, 4, 1) 35%,
+          rgba(79, 78, 75, 1) 93%
+        );
+      }
+      .logo {
+        width: 100px;
+      }
+      h1 {
+        border: 2px solid aliceblue;
+        border-radius: 20px;
+        max-width: 300px;
+        display: block;
+        margin: 30px auto;
+      }
+      h2 {
+        margin: 0;
+      }
+      img {
+        max-width: 100%;
+        max-height: 500px;
+        border-radius: 20px;
+      }
+      P {
+        padding: 20px;
+        line-height: 30px;
+        max-width: 50%;
+        display: block;
+        margin: 0 auto;
+      }
+      a {
+        color: gray;
+        font-weight: lighter;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      button {
+        padding: 15px 30px;
+        display: block;
+        margin: 30px auto;
+        border: 1px solid black;
+        border-radius: 20px;
+        font-family: cursive;
+        font-weight: bolder;
+        font-size: medium;
+        background-color: black;
+        color: aliceblue;
+        transition: all 200ms ease-in-out;
+        box-shadow: 1px 1px 15px #3a3a39;
+      }
+      button:hover {
+        color: black;
+        background-color: #3a3a39;
+        box-shadow: 1px 1px 15px #3a3a39;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img
+        class="logo"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/016/original/pngimg.com_-_mercedes_logos_PNG32.png?1673805158"
+        alt="Benz-logo"
+      />
+      <br />
+      <h1>The Immortal <br />G-Class</h1>
+      <hr />
+      <h2>A love that lasts forever.</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/063/015/original/4f2e56e256c15ae323571884d829fda3.jpg?1673805106"
+        alt="G-Class-Benz"
+      />
+      <p>
+        The G-Class has been impressing fans around the world for over 40 years.
+        With its off-road skills as well as its iconic and robust design, the
+        G-Class is <strong>‘Stronger than time’</strong>. No wonder it’s the
+        vehicle of choice for immortals.
+        <br />
+        <a
+          href="https://en.wikipedia.org/wiki/Mercedes-Benz_G-Class"
+          target="_blank"
+          ><em>Discover more.</em></a
+        >
+      </p>
+      <button>Contact Us</button>
+    </div>
+
+    <script>
+      function MemberData() {
+        let name = prompt("What's your name?");
+        let email = prompt("What's your Email Address?");
+        let age = prompt("How old are you?");
+        if (age > 10) {
+          alert(name + ",You are ready for endless adventures.");
+        } else {
+          alert(name + ",We have a surprise for you🎁!check your email.");
+        }
+      }
+
+      let Contactusbutton = document.querySelector("button");
+      Contactusbutton.addEventListener("click", MemberData);
+    </script>
+  </body>
+</html>
